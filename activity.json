@@ -1,11 +1,11 @@
 {
-    "name": "folgojsontransformer",
+    "name": "flogojsontransformer",
     "type": "flogo:activity",
-    "ref": "github.com/abasse/folgojsontransformer",
+    "ref": "github.com/abasse/flogojsontransformer",
     "version": "0.0.1",
     "title": "JSON Transfomer",
     "description": "Transforms JSON data",
-    "homepage": "https://github.com/abasse/folgojsontransformer",
+    "homepage": "https://github.com/abasse/flogojsontransformer",
       "inputs":[
         {
           "name": "Input",
