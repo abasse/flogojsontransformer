@@ -25,15 +25,20 @@ func (a *JsontransformerActivity) Metadata() *activity.Metadata {
 
 func (a *JsontransformerActivity) Eval(context activity.Context) (done bool, err error) {
 
+	log.Info("JSON Transformer starting....")
+
 	jsonin, _ := context.GetInput("Input").(string)
 	spec, _ := context.GetInput("Transformation").(string)
+
+	log.Info("jsonIn " + jsonin)
+	log.Info("spec " + spec)
 
 	kazaamTransform, _ := kazaam.NewKazaam(spec)
 	kazaamOut, err := kazaamTransform.TransformJSONStringToString(jsonin)
 	if err != nil {
 		log.Info(err)
 	}
-
+	log.Info("kazaamOut " + kazaamOut)
 	context.SetOutput("result", kazaamOut)
 
 	return true, nil
