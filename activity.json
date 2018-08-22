@@ -1,0 +1,28 @@
+{
+    "name": "folgojsontransformer",
+    "type": "flogo:activity",
+    "ref": "github.com/abasse/folgojsontransformer",
+    "version": "0.0.1",
+    "title": "JSON Transfomer",
+    "description": "Transforms JSON data",
+    "homepage": "https://github.com/abasse/folgojsontransformer",
+      "inputs":[
+        {
+          "name": "Input",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "Transformation",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "outputs": [
+         {
+            "name": "Result",
+            "type": "string"
+          }
+      ]
+  }
+  
