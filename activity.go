@@ -1,4 +1,4 @@
-package folgojsontransformer
+package flogojsontransformer
 
 import (
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
@@ -7,7 +7,7 @@ import (
 )
 
 // activityLog is the default logger for the exec Activity
-var log = logger.GetLogger("activity-tibco-folgojsontransformer")
+var log = logger.GetLogger("activity-tibco-flogojsontransformer")
 
 type JsontransformerActivity struct {
 	metadata *activity.Metadata
