@@ -27,7 +27,7 @@ Inputs and Outputs:
       ],
       "outputs": [
          {
-           "name": "Result",
+           "name": "result",
            "type": "string"
           }
       ]
